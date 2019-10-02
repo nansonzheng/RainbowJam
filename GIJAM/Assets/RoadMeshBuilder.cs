@@ -43,7 +43,7 @@ public class RoadMeshBuilder : MonoBehaviour {
         roadMesh.triangles = tris.ToArray();
         roadMeshFilter.mesh = roadMesh;
         road.sharedMesh = roadMeshFilter.sharedMesh;
-        //StartCoroutine("buildMesh");
+        StartCoroutine("buildMesh");
     }
 	
 	// Update is called once per frame
